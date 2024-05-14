@@ -28,6 +28,9 @@
         #display {
             width: 470px;
             height: 100px;
+            display: grid;
+            justify-content: end;
+            align-content: center;
             border: 3px solid #3c6382;
             border-radius: 15px 15px 20px 20px;
             background-color: rgba(96, 163, 188, 0.12);
@@ -55,12 +58,22 @@
         }
 
         .buttons {
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
+            display: grid;
             border: 3px solid #3c6382;
             color: white;
             font-size: 28px;
             text-align: center;
+            align-content: center;
+        }
+
+        span {
+            width: fit-content;
+            height: fit-content;
+            font-size: 50px;
+            color: #eeaeca;
+            display: grid;
         }
 
     </style>
@@ -68,7 +81,7 @@
 </head>
     <body>
         <section class="container">
-            <div id="display"></div>
+            <div id="display"><span>84</span></div>
             <div id="button-section">
                 <div class="buttons">7</div>
                 <div class="buttons">8</div>
@@ -88,5 +101,10 @@
                 <div class="buttons">*</div>
             </div>
         </section>
+
+        <script src="assets/lib/jquery-3.7.1.min.js"></script>
+        <script>
+
+        </script>
     </body>
 </html>
